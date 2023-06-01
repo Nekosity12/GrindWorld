@@ -10,31 +10,31 @@ setGameInfo({
 
 addResources({                                          // Function for adding all the resources (items/tools/buildings) that are used in your game!
     dirt: {
-        image: "images/system/wip",
+        image: "images/dirt.png",
     },
     log: {
-        image: "images/system/wip",
+        image: "images/oakLog.png",
     },
     planks: {
-        image: "images/system/wip",
+        image: "images/system/wip.png",
     },
     "crafting table": {
-        image: "images/system/wip",
+        image: "images/system/wip.png",
     },
     grass: {
-        image: "images/system/wip",
+        image: "images/grass.png",
     },
     deepslate: {
-        image: "images/system/wip",
+        image: "images/system/wip.png",
     },
     stone: {
-        image: "images/system/wip",
+        image: "images/system/wip.png",
     },
     "lapis ore": {
-        image: "images/system/wip",
+        image: "images/system/wip.png",
     },
     "coal ore": {
-        image: "images/system/wip",
+        image: "images/system/wip.png",
     },
 });
 
@@ -43,7 +43,7 @@ addResources({                                          // Function for adding a
 addArea("fS",                                            // Function for adding areas to your game
 {
     name: "Fresh Seed",
-    image: "images/areas/cityState.png",
+    image: "images/areas/freshseed.png",
     unlocked: true,
     updateWhileUnactive: true,
 
@@ -51,8 +51,8 @@ addArea("fS",                                            // Function for adding 
         {
             name: "surface",
             unlocked: true,
-            auto: ["dirt hut"],                         // List of items that will auto-grind this grind
-            background: "images/grinds/overworld.png",
+            auto: ["crafting table"],                         // List of items that will auto-grind this grind
+            background: "images/grinds/surfacegrind.png",
             resources: [
                 {
                     id: "log",
@@ -67,7 +67,7 @@ addArea("fS",                                            // Function for adding 
 				{
                     id: "grass",
                     time: [["", 0.2]],
-                    probability: 30,
+                    probability: 55,
                 },
             ]
         },
@@ -173,19 +173,22 @@ addArea("fS",                                            // Function for adding 
             cost: [["dirt", 0]],
         },
         {
-            name: "seed",
+            name: "grass",
+            displayName: "seed",
             desc: "Used to grow wheat",
             type: "display",
             cost: [["grass", 0]],
         },
         {
-            name: "oak log",
+            name: "log",
+            displayName: "Oak Log",
             desc: "Used to create planks",
             type: "display",
             cost: [["log", 0]],
         },
         {
-            name: "oak planks",
+            name: "planks",
+            displayName: "Oak Planks",
             desc: "Basic building block, used to make tools",
             type: "craft",
             amount: 4,
@@ -198,7 +201,8 @@ addArea("fS",                                            // Function for adding 
             cost: [["planks", 4]],
         },
         {
-            name: "cobblestone",
+            name: "stone",
+            displayName: "Cobblestone",
             desc: "Basic building block, used to make better tools",
             type: "display",
             cost: [["stone", 0]],
