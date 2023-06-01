@@ -31,9 +31,9 @@ addResources({                                          // Function for adding a
 
 // Areas
 
-addArea("c",                                            // Function for adding areas to your game
+addArea("fS",                                            // Function for adding areas to your game
 {
-    name: "City State",
+    name: "Fresh Seed",
     image: "images/areas/cityState.png",
     unlocked: true,
     updateWhileUnactive: true,
@@ -46,17 +46,114 @@ addArea("c",                                            // Function for adding a
             background: "images/grinds/overworld.png",
             resources: [
                 {
-                    id: "stick",
-                    time: [["", 0.5]],
-                    probability: 50,
+                    id: "log",
+                    time: [["", 3]],
+                    probability: 15,
                 },
                 {
                     id: "dirt",
-                    time: [["", 0.6]],
-                    probability: 50,
+                    time: [["", 0.75]],
+                    probability: 30,
+                },
+				{
+                    id: "grass",
+                    time: [["", 0.2]],
+                    probability: 30,
                 },
             ]
         },
+		{
+            name: "caves",
+            unlocked: true,
+            auto: ["dirt hut"],                         // List of items that will auto-grind this grind
+            background: "images/grinds/overworld.png",
+            resources: [
+                {
+                    id: "stone",
+                    time: [["", 3]],
+                    probability: 15,
+                },
+                {
+                    id: "coal_ore",
+                    time: [["", 0.75]],
+                    probability: 30,
+                },
+				{
+                    id: "lapis_ore",
+                    time: [["", 0.2]],
+                    probability: 30,
+                },
+            ]
+        },
+		{
+            name: "deep caves",
+            unlocked: true,
+            auto: ["dirt hut"],                         // List of items that will auto-grind this grind
+            background: "images/grinds/overworld.png",
+            resources: [
+                {
+                    id: "r",
+                    time: [["", 3]],
+                    probability: 15,
+                },
+                {
+                    id: "s",
+                    time: [["", 0.75]],
+                    probability: 30,
+                },
+				{
+                    id: "t",
+                    time: [["", 0.2]],
+                    probability: 30,
+                },
+            ]
+        },
+		{
+            name: "oceans",
+            unlocked: true,
+            auto: ["dirt hut"],                         // List of items that will auto-grind this grind
+            background: "images/grinds/overworld.png",
+            resources: [
+                {
+                    id: "u",
+                    time: [["", 3]],
+                    probability: 15,
+                },
+                {
+                    id: "v",
+                    time: [["", 0.75]],
+                    probability: 30,
+                },
+				{
+                    id: "w",
+                    time: [["", 0.2]],
+                    probability: 30,
+                },
+            ]
+        },
+		{
+            name: "farm",
+            unlocked: true,
+            auto: ["dirt hut"],                         // List of items that will auto-grind this grind
+            background: "images/grinds/overworld.png",
+            resources: [
+                {
+                    id: "x",
+                    time: [["", 3]],
+                    probability: 15,
+                },
+                {
+                    id: "y",
+                    time: [["", 0.75]],
+                    probability: 30,
+                },
+				{
+                    id: "z",
+                    time: [["", 0.2]],
+                    probability: 30,
+                },
+            ]
+        }
     ],
 
     crafts: [
