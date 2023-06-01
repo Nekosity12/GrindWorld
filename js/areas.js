@@ -10,22 +10,22 @@ setGameInfo({
 
 addResources({                                          // Function for adding all the resources (items/tools/buildings) that are used in your game!
     dirt: {
-        image: "images/dirt.png",
+        image: "images/wip",
     },
     stick: {
-        image: "images/stick.png",
+        image: "images/wip",
     },
     planks: {
-        image: "images/planks.png",
+        image: "images/wip",
     },
     door: {
-        image: "images/door.png",
+        image: "images/wip",
     },
     "crafting table": {
-        image: "images/craftingTable.png",
+        image: "images/wip",
     },
     "dirt hut": {
-        image: "images/dirtHut.png",
+        image: "images/wip",
     },
 });
 
@@ -64,7 +64,7 @@ addArea("fS",                                            // Function for adding 
         },
 		{
             name: "caves",
-            unlocked: true,
+            unlocked: false,
             auto: ["dirt hut"],                         // List of items that will auto-grind this grind
             background: "images/grinds/overworld.png",
             resources: [
@@ -87,7 +87,7 @@ addArea("fS",                                            // Function for adding 
         },
 		{
             name: "deep caves",
-            unlocked: true,
+            unlocked: false,
             auto: ["dirt hut"],                         // List of items that will auto-grind this grind
             background: "images/grinds/overworld.png",
             resources: [
@@ -110,7 +110,7 @@ addArea("fS",                                            // Function for adding 
         },
 		{
             name: "oceans",
-            unlocked: true,
+            unlocked: false,
             auto: ["dirt hut"],                         // List of items that will auto-grind this grind
             background: "images/grinds/overworld.png",
             resources: [
@@ -133,7 +133,7 @@ addArea("fS",                                            // Function for adding 
         },
 		{
             name: "farm",
-            unlocked: true,
+            unlocked: false,
             auto: ["dirt hut"],                         // List of items that will auto-grind this grind
             background: "images/grinds/overworld.png",
             resources: [
