@@ -10,22 +10,22 @@ setGameInfo({
 
 addResources({                                          // Function for adding all the resources (items/tools/buildings) that are used in your game!
     dirt: {
-        image: "images/wip",
+        image: "images/system/wip",
     },
     stick: {
-        image: "images/wip",
+        image: "images/system/wip",
     },
     planks: {
-        image: "images/wip",
+        image: "images/system/wip",
     },
     door: {
-        image: "images/wip",
+        image: "images/system/wip",
     },
     "crafting table": {
-        image: "images/wip",
+        image: "images/system/wip",
     },
     "dirt hut": {
-        image: "images/wip",
+        image: "images/system/wip",
     },
 });
 
