@@ -1,13 +1,4 @@
 # Changelog
-
-## v1.1.2 - 5/22/23:
- - A few more small bug fixes to get ready for release
-
-### v1.1.1 - 5/16/23:
- - More code cleanups
- - Small bug fixes
-
-
 ### v1.1 - 5/8/23:
  - Cleaned up some code
  - Added Base64-encoding for save codes

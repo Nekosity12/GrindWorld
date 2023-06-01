@@ -12,19 +12,28 @@ addResources({                                          // Function for adding a
     dirt: {
         image: "images/system/wip",
     },
-    stick: {
+    log: {
         image: "images/system/wip",
     },
     planks: {
         image: "images/system/wip",
     },
-    door: {
-        image: "images/system/wip",
-    },
     "crafting table": {
         image: "images/system/wip",
     },
-    "dirt hut": {
+    grass: {
+        image: "images/system/wip",
+    },
+    deepslate: {
+        image: "images/system/wip",
+    },
+    stone: {
+        image: "images/system/wip",
+    },
+    "lapis ore": {
+        image: "images/system/wip",
+    },
+    "coal ore": {
         image: "images/system/wip",
     },
 });
@@ -74,12 +83,12 @@ addArea("fS",                                            // Function for adding 
                     probability: 15,
                 },
                 {
-                    id: "coal_ore",
+                    id: "coal ore",
                     time: [["", 0.75]],
                     probability: 30,
                 },
 				{
-                    id: "lapis_ore",
+                    id: "lapis ore",
                     time: [["", 0.2]],
                     probability: 30,
                 },
@@ -92,7 +101,7 @@ addArea("fS",                                            // Function for adding 
             background: "images/grinds/overworld.png",
             resources: [
                 {
-                    id: "r",
+                    id: "deepslate",
                     time: [["", 3]],
                     probability: 15,
                 },
@@ -158,42 +167,47 @@ addArea("fS",                                            // Function for adding 
 
     crafts: [
         {
-            name: "stick",
-            desc: "Used to craft planks",
-            type: "display",
-            cost: [["stick", 0]],
-        },
-        {
             name: "dirt",
-            desc: "Used to build a dirt hut",
+            desc: "Basic building block, needed for farmland",
             type: "display",
             cost: [["dirt", 0]],
         },
         {
-            name: "planks",
-            desc: "Used to make a crafting table",
+            name: "seed",
+            desc: "Used to grow wheat",
+            type: "display",
+            cost: [["grass", 0]],
+        },
+        {
+            name: "oak log",
+            desc: "Used to create planks",
+            type: "display",
+            cost: [["log", 0]],
+        },
+        {
+            name: "oak planks",
+            desc: "Basic building block, used to make tools",
             type: "craft",
-            cost: [["stick", 2]],
+            amount: 4,
+            cost: [["log", 1]],
         },
         {
             name: "crafting table",
-            desc: "Required to build a dirt hut",
+            desc: "Required for advanced crafting",
             type: "craft",
             cost: [["planks", 4]],
         },
         {
-            name: "door",
-            desc: "Required to build a dirt hut",
-            type: "craft",
-            amount: 3,
-            cost: [["planks", 6]],
+            name: "cobblestone",
+            desc: "Basic building block, used to make better tools",
+            type: "display",
+            cost: [["stone", 0]],
         },
         {
-            name: "dirt hut",
-            desc: "Required to beat the game!",
-            type: "craft",
-            cost: [["dirt", 23], ["crafting table", 1], ["door", 1]],
-            message: "You have beaten the game!",
+            name: "coal",
+            desc: "Resource, used as fuel",
+            type: "display",
+            cost: [["coal ore", 0]],
         },
     ],
 
